@@ -1,5 +1,6 @@
 package com.infnet;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +9,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        User eu = new User("joao cicero", "joao.ramos@al.infnet.edu.br", ECargo.ESTAGIARIO);
+        User eu = new User(0,"joao cicero", "joao.ramos@al.infnet.edu.br", ECargo.ESTAGIARIO, 24, new BigDecimal(999999));
         String loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacus metus, gravida vitae tellus vitae, facilisis tincidunt dolor. Suspendisse maximus, eros eu bibendum fringilla, ligula lorem posuere neque, id molestie felis mauris a diam. Duis nec erat vitae tellus tempor malesuada. Suspendisse finibus finibus turpis, in egestas ipsum suscipit sagittis";
         List<Task> tarefas = new ArrayList<Task>();
         tarefas.add(
